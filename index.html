@@ -7,31 +7,31 @@
 <meta name="color-scheme" content="dark">
 <title>Angebot Attila Guest App — SLI.CH</title>
 <style>
-  :root{--ink:#0d2436;--paper-2:#fffdf7;--line:#e5dcc7;--muted:#6c6656;--text:#22303a;
-    --brass:#c39a45;--brass-ink:#9a7526;--sea:#3a7ba0;
-    --grad:linear-gradient(120deg,#b8892f 0%,#e2c67f 100%);--grad-sea:linear-gradient(120deg,#1f4d6b 0%,#3a7ba0 100%);
+  :root{--ink:#0d2436;--paper-2:#ffffff;--line:#dae5ee;--muted:#5f7182;--text:#22303a;
+    --brass:#3a7ba0;--brass-ink:#235f86;--sea:#3a7ba0;
+    --grad:linear-gradient(120deg,#2f6f96 0%,#9cc9e6 100%);--grad-sea:linear-gradient(120deg,#1f4d6b 0%,#3a7ba0 100%);
     --shadow:0 14px 40px -22px rgba(0,0,0,.55)}
   *{box-sizing:border-box;margin:0;padding:0}
   body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#eaf0f6;line-height:1.6;min-height:100vh;
     display:flex;flex-direction:column;-webkit-font-smoothing:antialiased;
-    background:radial-gradient(1200px 620px at 82% -12%,rgba(195,154,69,.20),transparent 60%),radial-gradient(920px 560px at 4% 114%,rgba(58,123,160,.28),transparent 55%),var(--ink)}
+    background:radial-gradient(1200px 620px at 82% -12%,rgba(58,123,160,.20),transparent 60%),radial-gradient(920px 560px at 4% 114%,rgba(58,123,160,.28),transparent 55%),var(--ink)}
   .wrap{width:100%;max-width:960px;margin:0 auto;padding:0 28px}
   .brandbar{display:flex;justify-content:space-between;align-items:center;padding:28px 0;font-size:13px;color:#9fb0c1;letter-spacing:.04em}
   .brandbar b{color:#fff;letter-spacing:.02em}
   .anchor{width:15px;height:15px;vertical-align:-2px;margin-right:7px}
   .hero{padding:30px 0 6px}
-  .kicker{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#e2c67f;margin-bottom:16px}
+  .kicker{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#9cc9e6;margin-bottom:16px}
   .kicker::before{content:"";width:26px;height:2px;background:var(--grad);border-radius:2px}
   .hero h1{font-size:clamp(28px,5vw,46px);color:#fff;font-weight:700;max-width:16ch;letter-spacing:-.02em;line-height:1.12}
   .hero h1 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
   .hero p.sub{margin-top:18px;font-size:17px;color:#b6c2d1;max-width:600px}
   .lock{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-size:13px;color:#cdd8e4;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:8px 14px;border-radius:999px}
-  .lock svg{width:14px;height:14px;stroke:#e2c67f;stroke-width:1.9;fill:none}
+  .lock svg{width:14px;height:14px;stroke:#9cc9e6;stroke-width:1.9;fill:none}
   main{flex:1;padding:40px 0 20px}
   .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
   .card{position:relative;background:var(--paper-2);color:var(--text);border-radius:20px;padding:32px 30px;display:flex;flex-direction:column;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.06)}
-  .card.featured{border:2px solid var(--brass);box-shadow:0 26px 60px -26px rgba(195,154,69,.6)}
-  .card.featured::before{content:"Empfohlen";position:absolute;top:-13px;left:28px;background:var(--grad);color:#25190a;font-weight:700;font-size:11px;padding:5px 13px;border-radius:999px}
+  .card.featured{border:2px solid var(--brass);box-shadow:0 26px 60px -26px rgba(58,123,160,.6)}
+  .card.featured::before{content:"Empfohlen";position:absolute;top:-13px;left:28px;background:var(--grad);color:#0a1c2b;font-weight:700;font-size:11px;padding:5px 13px;border-radius:999px}
   .tag{align-self:flex-start;font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--brass-ink)}
   .tag.sea{color:var(--sea)}
   .card h2{font-size:22px;margin:10px 0 8px;color:var(--ink);letter-spacing:-.01em}
@@ -43,7 +43,7 @@
   .actions{margin-top:auto}
   .btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14px;padding:12px 20px;border-radius:11px;text-decoration:none;transition:transform .12s}
   .btn:hover{transform:translateY(-1px)}
-  .btn.primary{background:var(--grad);color:#25190a;box-shadow:0 12px 26px -14px rgba(195,154,69,.8)}
+  .btn.primary{background:var(--grad);color:#0a1c2b;box-shadow:0 12px 26px -14px rgba(58,123,160,.8)}
   .btn.sea{background:var(--grad-sea);color:#fff;box-shadow:0 12px 26px -14px rgba(58,123,160,.8)}
   .btn svg{width:15px;height:15px;stroke:currentColor;stroke-width:1.9;fill:none}
   footer{padding:26px 0 34px;font-size:12.5px;color:#7f92a5}
@@ -56,42 +56,31 @@
 <div class="wrap">
   <div class="brandbar">
     <span>
-      <svg class="anchor" viewBox="0 0 24 24" fill="none" stroke="#e2c67f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.4"/><path d="M12 7.4V21"/><path d="M5 12H3a9 9 0 0 0 18 0h-2"/><path d="M8.5 9.5h7"/></svg>
+      <svg class="anchor" viewBox="0 0 24 24" fill="none" stroke="#9cc9e6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.4"/><path d="M12 7.4V21"/><path d="M5 12H3a9 9 0 0 0 18 0h-2"/><path d="M8.5 9.5h7"/></svg>
       <b>SLI.CH</b> · Digitale Produkte
     </span>
     <span>Angebot · 12.07.2026 · gültig 30 Tage</span>
   </div>
   <header class="hero">
-    <span class="kicker">Übersicht · Zwei Fassungen</span>
+    <span class="kicker">Vertrauliches Angebot</span>
     <h1>Angebot <span class="hl">Attila Guest App</span></h1>
-    <p class="sub">Native iOS- &amp; Android-App plus Web-Backend. Wählen Sie die passende Fassung — beide sind passwortgeschützt.</p>
+    <p class="sub">Native iOS- &amp; Android-App plus Web-Backend — mit CHF-Richtpreisen für MVP und optionale Module. Passwortgeschützt.</p>
     <span class="lock"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Passwortgeschützt · Inhalt AES-256-verschlüsselt</span>
   </header>
 </div>
 <main>
   <div class="wrap">
-    <div class="grid">
-      <div class="card featured">
-        <span class="tag">Fassung A</span>
-        <h2>Angebot mit Preisen</h2>
-        <p class="desc">Die vollständige Offerte mit CHF-Richtpreisen — MVP und alle optionalen Module einzeln ausgewiesen.</p>
+    <div style="max-width:540px;margin:0 auto">
+      <div class="card">
+        <span class="tag">Angebot mit Preisen</span>
+        <h2>Vollständige Offerte</h2>
+        <p class="desc">Die vollständige Offerte mit CHF-Richtpreisen — MVP «An Bord» und alle optionalen Module einzeln ausgewiesen.</p>
         <ul class="meta">
           <li>MVP «An Bord» als <b>empfohlener Start</b></li>
           <li>9 optionale Module mit Einzelpreisen</li>
           <li>Stundenaufschlüsselung je Position</li>
         </ul>
         <div class="actions"><a class="btn primary" href="gate-preise.html">Angebot öffnen</a></div>
-      </div>
-      <div class="card">
-        <span class="tag sea">Fassung B</span>
-        <h2>Angebot — nur Aufwand</h2>
-        <p class="desc">Dieselbe Offerte ohne Preise — ausgewiesen ist nur der geschätzte Aufwand in Stunden je Position.</p>
-        <ul class="meta">
-          <li>MVP «An Bord» — <b>schlanker Kern</b></li>
-          <li>9 optionale Module mit Std.-Aufwand</li>
-          <li>Aufwand je Position ausgewiesen</li>
-        </ul>
-        <div class="actions"><a class="btn sea" href="gate-aufwand.html">Angebot öffnen</a></div>
       </div>
     </div>
   </div>
